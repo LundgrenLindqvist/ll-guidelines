@@ -1,0 +1,26 @@
+.Aside {
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    font-family: monospace;
+    padding: 1em;
+    flex: 0 0 auto;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    width: 256px;
+}
+.Aside-label {
+    width: 100%;
+    font-size: 0.75em;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25em;
+}
+.Aside-range {
+    margin-bottom: 1em;
+    cursor: pointer;
+}

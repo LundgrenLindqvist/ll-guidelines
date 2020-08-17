@@ -1,0 +1,60 @@
+.Main {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 auto;
+}
+.Main-section {
+    width: 100%;
+    padding: calc(var(--gutter) / 2);
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    max-width: var(--max_width);
+}
+.Main-section:after {
+    content: '';
+    display: block;
+    pointer-events: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: var(--gutter);
+    width: calc(100% - var(--gutter)*2 - 1px);
+    height: 100%;
+    border-left: 1px solid rgba(0,255,255,0.2);
+    border-right: 1px solid rgba(0,255,255,0.2);
+    background: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent calc((100% + var(--gutter))/12 - var(--gutter)),
+        rgba(0,255,255,0.1) calc((100% + var(--gutter))/12 - var(--gutter)),
+        rgba(0,255,255,0.1) calc((100% + var(--gutter))/12)
+    );
+}
+.Main-area {
+    margin: calc(var(--gutter) / 2);
+    background-color: #f6f6f6;
+    position: relative;
+}
+.Main-area:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    padding: calc(var(--gutter) / 4) calc(var(--gutter) / 2);
+    font-size: 0.75rem;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.Main-area:after {
+    display: block;
+    content: '';
+}
+.Main-area--full { width: calc(100% - var(--gutter)); }
+.Main-area--half { width: calc(50% - var(--gutter)); }
+.Main-area--third { width: calc(33.33% - var(--gutter)); }
+.Main-area--quarter { width: calc(25% - var(--gutter)); }

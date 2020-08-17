@@ -1,0 +1,38 @@
+html {
+    font-size: var(--base_size);
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    font-feature-settings: "ss03", "cv11";
+    -webkit-font-smoothing: antialiased;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+}
+h1 {
+    font-size: 6rem;
+    line-height: 1em;
+    font-weight: 900;
+}
+h1:not(:last-child) { margin-bottom: 3rem; }
+h2 {
+    font-size: 3rem;
+    line-height: 1em;
+    font-weight: 800;
+}
+h2:not(:last-child) { margin-bottom: 1.5rem; }
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.25em;
+}
+h3:not(:last-child) { margin-bottom: 0.75rem; }
+h4 {
+    font-size: 1rem;
+    line-height: 1.5em;
+}
