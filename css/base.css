@@ -9,30 +9,37 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 body {
     display: flex;
     flex-flow: row;
     position: relative;
+    background-color: var(--color_base);
+    color: var(--color_contrast);
 }
 h1 {
     font-size: 6rem;
     line-height: 1em;
     font-weight: 900;
+    word-break: break-all;
 }
 h1:not(:last-child) { margin-bottom: 3rem; }
 h2 {
     font-size: 3rem;
     line-height: 1em;
     font-weight: 800;
+    word-break: break-all;
 }
 h2:not(:last-child) { margin-bottom: 1.5rem; }
 h3 {
     font-size: 1.5rem;
     line-height: 1.25em;
+    word-break: break-all;
 }
 h3:not(:last-child) { margin-bottom: 0.75rem; }
 h4 {
     font-size: 1rem;
     line-height: 1.5em;
+    word-break: break-all;
 }

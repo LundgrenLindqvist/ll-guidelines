@@ -12,6 +12,20 @@
     flex-flow: column;
     width: 256px;
 }
+.Aside-fieldset {
+    display: flex;
+    flex-flow: column;
+    padding: 0.5em;
+    border: 1px solid #fff;
+    margin-bottom: 1em;
+}
+.Aside-legend {
+    font-size: 0.75em;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25em;
+}
 .Aside-label {
     width: 100%;
     font-size: 0.75em;
@@ -23,4 +37,20 @@
 .Aside-range {
     margin-bottom: 1em;
     cursor: pointer;
+}
+.Aside-color {
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin: 0.2em 0 1em;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+.Aside-color::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.Aside-color::-webkit-color-swatch {
+    border: none;
 }
